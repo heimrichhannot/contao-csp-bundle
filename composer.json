@@ -1,0 +1,19 @@
+{
+  "name": "heimrichhannot/contao-csp-bundle",
+  "type": "contao-bundle",
+  "description": "A Content Security Policy (CSP) bundle to Contao 4.",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "php": "^8.1",
+    "contao/core-bundle": "^4.13",
+    "symfony/http-kernel": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "HeimrichHannot\\CspBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "HeimrichHannot\\CspBundle\\ContaoManager\\Plugin"
+  }
+}
