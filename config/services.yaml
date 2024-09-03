@@ -1,0 +1,5 @@
+services:
+  HeimrichHannot\CspBundle\:
+    resource: '../src/*'
+    autowire: true
+    autoconfigure: true
