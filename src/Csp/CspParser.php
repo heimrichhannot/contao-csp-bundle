@@ -8,7 +8,9 @@ use Nelmio\SecurityBundle\ContentSecurityPolicy\PolicyManager;
 
 class CspParser
 {
-    public function __construct(private readonly PolicyManager $policyManager)
+    public function __construct(
+        private readonly PolicyManager $policyManager
+    )
     {
     }
 

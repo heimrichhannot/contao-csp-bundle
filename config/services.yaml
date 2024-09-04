@@ -1,6 +1,7 @@
 services:
+
   HeimrichHannot\CspBundle\:
-  resource: '../src/{Controller,Csp,EventListener}'
+    resource: '../src/{Controller,Csp,EventListener}/*'
     autowire: true
     autoconfigure: true
     bind:
