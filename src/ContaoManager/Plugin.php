@@ -34,6 +34,6 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface, RoutingPlu
 
     public function getRouteCollection(LoaderResolverInterface $resolver, KernelInterface $kernel)
     {
-        return $resolver->resolve('@HeimrichHannotCspBundle/config/routing.yaml')->load('@HeimrichHannotCspBundle/config/routing.yaml');
+        return $resolver->resolve('@HeimrichHannotCspBundle/config/routes.yaml')->load('@HeimrichHannotCspBundle/config/routes.yaml');
     }
 }
