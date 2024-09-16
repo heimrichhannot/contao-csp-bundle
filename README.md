@@ -25,5 +25,5 @@ Go to the root page settings. There you find an option to enable CSP. If you ena
 
 ## Read more
 
-[Offical documentation](https://docs.contao.org/manual/de/seitenstruktur/website-startseite/#content-security-policy)
+[Offical documentation](https://docs.contao.org/manual/de/seitenstruktur/website-startseite/#content-security-policy)  
 [Pull request](https://github.com/contao/contao/pull/6631)
