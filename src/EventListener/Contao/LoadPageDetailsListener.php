@@ -14,8 +14,9 @@ class LoadPageDetailsListener
             return;
         }
 
-        $rootPage = $parentModels[array_key_last($parentModels)] ?? null;
-        if (!$rootPage || $rootPage->type == 'root') {
+        $rootPage = ($page->type == 'root') ? $page : ($parentModels[array_key_last($parentModels)] ?? null);
+
+        if (!$rootPage || $rootPage->type != 'root') {
             return;
         }
 

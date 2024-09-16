@@ -1,8 +1,15 @@
 services:
 
   HeimrichHannot\CspBundle\:
-    resource: '../src/{Controller,Csp,EventListener}/*'
+    resource: '../src/{Csp,EventListener}/*'
     autowire: true
     autoconfigure: true
     bind:
       Nelmio\SecurityBundle\ContentSecurityPolicy\PolicyManager: '@nelmio_security.policy_manager'
+
+  HeimrichHannot\CspBundle\Controller\CspReporterController:
+    arguments:
+      - '@contao.framework'
+      - '@?nelmio_security.csp_reporter_controller'
+    tags:
+      - controller.service_arguments

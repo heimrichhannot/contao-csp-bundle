@@ -5,6 +5,7 @@ namespace HeimrichHannot\CspBundle\Controller;
 use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\PageModel;
 use Nelmio\SecurityBundle\Controller\ContentSecurityPolicyController;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -15,7 +16,7 @@ final class CspReporterController
 {
     public function __construct(
         private readonly ContaoFramework $framework,
-        private readonly ContentSecurityPolicyController $nelmioController,
+        private readonly ContentSecurityPolicyController|null $nelmioController,
     ) {
     }
 
